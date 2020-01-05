@@ -1,0 +1,16 @@
+<?php 
+
+function searchArray($array,$keyword)
+{
+	foreach($array as $key => $value)
+	{
+		if(strpos($key, $keyword))
+		echo $key." ".$value."<br/>";
+	}
+}
+
+
+
+$array=array("hthsier"=>80, "pantlaon"=>200,"orange"=>50);
+$keyword="t";
+searchArray($array,$keyword);
